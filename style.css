@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: rgb(214, 214, 214);
+}
+
+.topHeader {
+    background-color: rgb(122, 110, 162);
+    padding: 18px;
+    color: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    margin-bottom: 40px;
+}
+
+
+.topHeader .topInputContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+}
+
+.searchInput {
+    padding: 8px;
+    width: 40em;
+}
+
+.searchButton {
+    padding: 9px;
+    background-color: rgb(99, 135, 204);
+    border-style: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.1s;
+}
+
+.searchButton:hover {
+    cursor: pointer;
+    background-color: rgb(73, 87, 167);  
+}
+
+.cartButton {
+    opacity: 80%;
+    transition: 0.1s;
+}
+
+.cartButton img {
+    max-width: 42%;
+}
+
+.cartButton:hover {
+    opacity: 100%;
+}
+
+.userButton {
+    opacity: 80%;
+    transition: 0.1s;
+}
+
+.userButton img {
+    margin-left:10px ;
+    max-width: 40px;
+    border-radius: 100%;
+}
+
+.userButton:hover {
+    opacity: 100%;
+}
+
+.midContainer{
+    max-width: 1358px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    overflow: hidden;
+    display: flex;
+    margin-bottom: 90px;
+}
+
+#carouselContainer {
+    max-width: 700px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.sideContainer {
+    margin-left: 100px;
+    max-width: 500px;
+    padding: 19px;
+    background-color: white;
+}
+
+.aboutTexts h2 {
+    text-align: center;
+    color: rgb(96, 83, 139);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 8px solid rgb(96, 83, 139);
+}
+
+.aboutTexts {
+    box-sizing: border-box;
+    padding: 9px;
+}
+
+.aboutSection h2 {
+    font-weight: bolder;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.aboutTexts p {
+    box-sizing: border-box;
+}
+
+.productContainer {
+    max-width: 1358px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 19px;
+    background-color: white;
+}
+
+.productContainer h2 {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    color:  rgb(96, 83, 139);
+    text-align: center;
+    font-weight: bolder;
+    border-bottom: 8px solid rgb(96, 83, 139);
+}
+
+.products {
+    align-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    margin-bottom: 40px;
+}
+
+.product {
+    box-sizing: border-box;
+    background-color: white;
+    text-decoration: none;
+    color:rgb(96, 83, 139);
+    padding: 10px;
+    max-width: 20%;
+    transition: 0.1s;
+}
+
+.product img {
+    object-fit: contain;
+}
+
+.product:hover {
+    transform: scale(1.03);
+    outline: 2px solid rgb(71, 46, 100);
+}
+
+.productDesc {
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.productContainer .products .product img {
+    max-width: 100%;
+}
+
+.product h3 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.viewMoreButton {
+    padding: 12px;
+    width: 30%;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(96, 83, 139);
+    color: white;
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+.viewMoreButton:hover {
+    cursor: pointer;
+    background-color: rgb(71, 46, 100);  
+}
+
+@media screen and (min-width:360px) and (max-width:640px) {
+    .topHeader h1 {
+        display: none;
+    }
+
+    .topHeader {
+        background-color: rgb(122, 110, 162);
+        padding: 1.5%;
+        color: white;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        margin-bottom: 0;
+    }
+    
+    .topHeader .topInputContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    form {
+        margin-left: 20px;
+        margin-right: 20px;
+        display: flex;
+        max-width: 20%;
+    }
+    
+    .searchInput {
+        padding: 8px;
+        width: 80em;
+    }
+    
+    .searchButton {
+        display: none;
+    }
+    
+    .searchButton:hover {
+        cursor: pointer;
+        background-color: rgb(73, 87, 167);  
+    }
+    
+    .topSideButtons {
+        align-items: center;
+    }
+    
+    .cartButton {
+        opacity: 100%;
+        transition: 0.1s;
+    }
+    
+    .cartButton img {
+        max-width: 32%;
+    }
+    
+    .userButton {
+        opacity: 100%;
+        transition: 0.1s;
+    }
+    
+    .userButton img {
+        margin-left:10px ;
+        max-width: 32%;
+        border-radius: 100%;
+    }
+
+    .midContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #carouselContainer {
+        max-width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .sideContainer {
+        margin-left: 0px;
+        max-width: 100%;
+        padding: 19px;
+        background-color: white;
+    }
+
+    .sideContainer p {
+        margin-bottom: 0.45em;
+    }
+    
+    .product {
+        box-sizing: border-box;
+        background-color: white;
+        text-decoration: none;
+        font-size: 1.1em;
+        color:rgb(96, 83, 139);
+        padding: 10px;
+        max-width: 50%;
+        transition: 0.1s;
+    }
+
+    .viewMoreButton {
+        padding: 15px;
+        width: 70%;
+        text-align: center;
+        font-size: 1.66em;
+        font-weight: bold;
+        background-color: rgb(96, 83, 139);
+        color: white;
+        text-decoration: none;
+        transition: 0.1s;
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:1023px) {
+
+    .topHeader {
+        background-color: rgb(122, 110, 162);
+        padding: 1.5%;
+        color: white;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        margin-bottom: 0;
+    }
+    
+    .topHeader .topInputContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    form {
+        margin-left: 20px;
+        margin-right: 20px;
+        display: flex;
+        max-width: 30%;
+    }
+    
+    .searchInput {
+        padding: 8px;
+        width: 80em;
+    }
+    
+    .searchButton:hover {
+        cursor: pointer;
+        background-color: rgb(73, 87, 167);  
+    }
+    
+    .topSideButtons {
+        align-items: center;
+    }
+    
+    .cartButton {
+        opacity: 100%;
+        transition: 0.1s;
+    }
+    
+    .cartButton img {
+        max-width: 32%;
+    }
+    
+    .userButton {
+        opacity: 100%;
+        transition: 0.1s;
+    }
+    
+    .userButton img {
+        margin-left:10px ;
+        max-width: 32%;
+        border-radius: 100%;
+    }
+
+    .midContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #carouselContainer {
+        max-width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .sideContainer {
+        margin-left: 0px;
+        max-width: 100%;
+        padding: 19px;
+        background-color: white;
+    }
+
+    .sideContainer p {
+        margin-bottom: 0.45em;
+    }
+    
+    
+    .product {
+        box-sizing: border-box;
+        background-color: white;
+        text-decoration: none;
+        font-size: 1.1em;
+        color:rgb(96, 83, 139);
+        padding: 10px;
+        max-width: 50%;
+        transition: 0.1s;
+    }
+
+    .viewMoreButton {
+        padding: 15px;
+        width: 70%;
+        text-align: center;
+        font-size: 1.66em;
+        font-weight: bold;
+        background-color: rgb(96, 83, 139);
+        color: white;
+        text-decoration: none;
+        transition: 0.1s;
+    }
+}
